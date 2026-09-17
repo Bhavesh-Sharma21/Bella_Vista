@@ -1,55 +1,148 @@
+/* Reset & Base Styles */
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: Arial,sans-serif;
+body {
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #333333;
 }
 
-.container{
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
-.header{
-    background-color: #e2c027;
-    color: white;
-    padding: 1rem 0;
-    top: 0; 
+
+/* Header & Navigation */
+.header {
+    position: absolute; /* Image ke upar overlay karne ke liye */
+    top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark semi-transparent background */
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.logo h1{
-    font-size: 2rem;
+
+.logo h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
     font-weight: bold;
-    margin-bottom: 0.2rem;
+    color: #e2c027; /* Gold color branding ke liye */
+    margin-bottom: 0px;
 }
-.logo tagline{
-    font-size: 0.9rem;
-    opacity: 0.8;
+
+.logo .tagline {
+    font-size: 0.85rem;
+    color: #ffffff;
+    opacity: 0.9;
+    display: block;
+    letter-spacing: 1px;
 }
-.nav-links{
+
+.nav-links {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 1.5rem;
 }
-.nav-links a{
-    color: whitesmoke;
+
+.nav-links a {
+    color: #ffffff;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
 }
-.nav-links a:hover{
-    background-color: rgba(193, 141, 21, 0.656);
+
+.nav-links a:hover {
+    color: #e2c027;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    /* Dark gradient layer lagayi hai taaki text ekdum saaf aur premium dikhe */
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.45)), url('images/image_6d19497c.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem; /* Bada aur dhasu heading */
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/* Premium Buttons Styling */
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px; /* Rounded pill style buttons */
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+    background-color: #e2c027;
+    color: #111111;
+}
+
+.btn-primary:hover {
+    background-color: #ffffff;
+    color: #111111;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #ffffff;
+    color: #111111;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
