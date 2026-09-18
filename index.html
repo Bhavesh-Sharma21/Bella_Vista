@@ -3,41 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bella Vista - Authentic Italian restaurant Serving fresh pasta, wood-fired pizzas and traditional italian cuisine">
+    <meta name="description" content="Bella Vista - Authentic Italian restaurant serving fresh pasta, wood-fired pizzas and traditional Italian cuisine">
     <title>Bella Vista Restaurant - Authentic Italian Cuisine</title>
+
     <link rel="stylesheet" href="styles.css">
-    <!-- Sundar Fonts ke liye Google Fonts add kiya hai -->
-    <link href="https://googleapis.com" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header class="header">
         <div class="container">
             <nav class="navbar">
-                <div class="logo">
+                <a href="#home" class="logo">
                     <h1>Bella Vista</h1>
-                    <span class="tagline">Authentic Italian cuisine</span>
-                </div>
+                    <span class="tagline">Authentic Italian Cuisine</span>
+                </a>
+
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact" class="nav-reserve">Reserve</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    
+
     <main>
+        <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="hero-content">
+                <span class="hero-subtitle">Fine Italian Dining</span>
                 <h2>Welcome to Bella Vista</h2>
-                <p>Experience the authentic taste of Italy in the heart of the city.</p>
+                <p>Experience handmade pasta, wood-fired pizza, and timeless Italian hospitality in the heart of the city.</p>
+
                 <div class="hero-buttons">
                     <a href="#menu" class="btn btn-primary">View Menu</a>
                     <a href="#contact" class="btn btn-secondary">Make Reservation</a>
                 </div>
             </div>
         </section>
+
+        <!-- Menu Section Started -->
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-title">Discover Our Flavors</span>
+                    <h2>Our Special Menu</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-img-box">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThaHUu6lPwm-_KNgKnYYp4osnRsdcnJVin8LZQyxLrmw&s=10" alt="Margherita Pizza">
+                            <span class="menu-price">$14.00</span>
+                        </div>
+                        <div class="menu-info">
+                            <h3>Margherita Pizza</h3>
+                            <p>Fresh mozzarella, organic San Marzano tomatoes, fresh basil, and a drizzle of extra virgin olive oil.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-img-box">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq7rEpp9CuR7kyXkWreSZ13HYUYiDa4pQvrzLz7Bfjcg&s=10" alt="Truffle Fettuccine">
+                            <span class="menu-price">$18.50</span>
+                        </div>
+                        <div class="menu-info">
+                            <h3>Truffle Fettuccine</h3>
+                            <p>Handcrafted fettuccine pasta tossed in a rich, creamy wild mushroom and black truffle sauce.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-img-box">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrIahb5oW38vl9c59QY-Zkew6XCwExOAQ7Dnmgz2w_cg&s=10" alt="Seafood Risotto">
+                            <span class="menu-price">$22.00</span>
+                        </div>
+                        <div class="menu-info">
+                            <h3>Seafood Risotto</h3>
+                            <p>Arborio rice slow-cooked with fresh prawns, calamari, mussels, garlic, and white wine broth.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="menu-img-box">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6L5V2qLLNlebb9Hh6VXa56QNXNdFjq1k_TGFKq6v3vw&s=10" alt="Classic Tiramisu">
+                            <span class="menu-price">$9.00</span>
+                        </div>
+                        <div class="menu-info">
+                            <h3>Classic Tiramisu</h3>
+                            <p>Layers of espresso-soaked ladyfingers, velvety mascarpone cream, and dusted with premium cocoa powder.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container about-wrapper">
+                <div class="about-content">
+                    <span class="sub-title">Our Story</span>
+                    <h2>Traditional Italian Cooking With A Modern Soul</h2>
+                    <p>
+                        At Bella Vista, every dish is crafted with patience, warmth, and respect for authentic Italian flavors.
+                        From slow-simmered sauces to hand-stretched pizza dough, our kitchen celebrates the comfort and elegance
+                        of Italy on every plate.
+                    </p>
+                    <p>
+                        Whether you are joining us for a romantic dinner, a family celebration, or a quiet evening with fresh pasta
+                        and wine, we create a dining experience that feels refined, welcoming, and unforgettable.
+                    </p>
+
+                    <div class="about-features">
+                        <div>
+                            <strong>15+</strong>
+                            <span>Years of Taste</span>
+                        </div>
+                        <div>
+                            <strong>Fresh</strong>
+                            <span>Daily Ingredients</span>
+                        </div>
+                        <div>
+                            <strong>Wood</strong>
+                            <span>Fired Pizzas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <span>Chef's Promise</span>
+                    <h3>Made Fresh. Served With Heart.</h3>
+                    <p>
+                        We use quality produce, aromatic herbs, premium cheese, and classic Italian techniques to bring rich,
+                        memorable flavors to your table.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header light">
+                    <span class="sub-title">Reserve Your Table</span>
+                    <h2>Contact Us</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Plan Your Visit</h3>
+                        <p>Book your table for lunch, dinner, celebrations, or a special evening with the people you love.</p>
+
+                        <div class="contact-detail">
+                            <span>Address</span>
+                            <p>24 Roma Street, City Center</p>
+                        </div>
+
+                        <div class="contact-detail">
+                            <span>Phone</span>
+                            <p>+1 234 567 8900</p>
+                        </div>
+
+                        <div class="contact-detail">
+                            <span>Email</span>
+                            <p>hello@bellavista.com</p>
+                        </div>
+
+                        <div class="contact-detail">
+                            <span>Opening Hours</span>
+                            <p>Mon - Sun: 11:00 AM - 11:00 PM</p>
+                        </div>
+                    </div>
+
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="guests">Guests</label>
+                                <input type="number" id="guests" name="guests" min="1" max="20" placeholder="Number of guests">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" name="date">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="time">Time</label>
+                                <input type="time" id="time" name="time">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Any special request?"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary form-btn">Send Reservation</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2>Bella Vista</h2>
+                <p>Authentic Italian cuisine, handcrafted with fresh ingredients, classic recipes, and warm hospitality.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Explore</h3>
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Contact</h3>
+                <p>24 Roma Street, City Center</p>
+                <p>+1 234 567 8900</p>
+                <p>hello@bellavista.com</p>
+            </div>
+
+            <div class="footer-newsletter">
+                <h3>Stay Updated</h3>
+                <p>Get special offers and seasonal menu updates.</p>
+                <div class="newsletter-box">
+                    <input type="email" placeholder="Email address">
+                    <button type="button">Join</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bella Vista Restaurant. All Rights Reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
